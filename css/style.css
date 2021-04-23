@@ -1,0 +1,647 @@
+/*Global Section*/
+
+body{
+    font-family: 'Raleway', sans-serif;
+   
+}
+
+p{
+    margin-bottom: 0;
+}
+
+
+/*Header CSS*/
+
+header{
+
+background: url(../images/banner-bg.png);
+
+background-position: center;
+
+background-size: cover;
+
+height: 100%;
+}
+
+.navbar{
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.navbar .nav-item .nav-link{
+    color: #fff;
+    margin-left: 30px;
+    transform: uppercase;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.navbar .nav-item .nav-link::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background: #e84545;
+    transition: 0.4s linear;
+}
+
+
+.navbar .nav-item .nav-link::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background: #e84545;
+    transition: 0.4s linear;
+}
+
+
+.navbar .nav-item.active .nav-link{
+        color: #e84545;
+
+}
+
+.navbar .nav-item.active .nav-link::after{
+    content: "";
+    position: absolute;
+    width:50%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background: #e84545;
+    transition: 0.4s linear;
+}
+
+.navbar .nav-item.active .nav-link::before{
+    content: "";
+    position: absolute;
+    width:50%;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background: #e84545;
+    transition: 0.4s linear;
+}
+
+
+.navbar .nav-item .nav-link:hover{
+    color: #e84545;
+}
+
+
+.navbar .nav-item .nav-link:hover::after{
+    width: 50%
+}
+
+.navbar .nav-item .nav-link:hover::before{
+    width: 50%
+
+}
+
+/*Hero Area CSS*/
+
+.hero-area{
+    text-align: center;
+    /* margin-top: 10%; */
+    margin: 113px 0;
+}
+
+.hero-area h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    color: #fff;
+    padding: 0 10%;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.hero-area p{
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.7;
+    padding: 0 10%;
+    margin-bottom: 50px;
+}
+
+.hero-area .btn-cta{
+    color: #fff;
+    border: 1px solid #e84545;
+    background: #e84545;
+    padding: 7px 40px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.hero-area .btn-cta:hover{
+    background: #d42020;
+    border: 1px solid #d42020;
+}
+
+
+
+/*Service Section CSS*/
+
+.service{
+    padding: 50px 0;
+}
+
+.service .box{
+    text-align: center;
+    margin: 30px 0;
+    padding: 0 0%;
+}
+
+.service .box img{
+    margin-bottom: 20px;
+}
+
+.service .box h4{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.service .box p{
+    line-height: 1.7;
+    color: #6c7279;
+    font-size: 14px;
+}
+
+
+/*Gallery Section CSS*/
+
+.gallery{
+    padding-top: 50px 0;
+}
+
+.gallery .gallery-item{
+    position: relative;
+    overflow: hidden;
+    }
+
+.gallery .gallery-item img{
+    transition: all 0.4s;
+}
+
+.gallery .gallery-item .hover-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    background: rgba(232, 69, 69, .9);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.gallery .gallery-item .hover-box h5{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 25%;
+    transform: translateX(-75%);
+    transition: all 0.5s;
+}
+
+.gallery .gallery-item .hover-box p{
+    transform: translateX(75%);
+    transition: all 0.5s;
+}
+
+.gallery .gallery-item:hover .hover-box{
+    opacity: 1;
+}
+
+.gallery .gallery-item:hover img{
+    transform: scale(1.2);
+}
+
+.gallery .gallery-item:hover .hover-box h5{
+    transform: translateY(0);
+}
+
+.gallery .gallery-item:hover .hover-box p{
+    transform: translateY(0);
+}
+
+
+/*Team CSS*/
+
+.team{
+    padding: 80px 0;
+}
+
+.team .team-box{}
+
+.team .team-box img{
+    margin-bottom: 20px;
+}
+
+.team .team-box h3{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.team .team-box h5{
+    font-size: 18px;
+    color: #e84545;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
+}
+
+.team .team-box p{
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+
+}
+
+.team .team-box .nav{}
+
+.team .team-box .nav .nav-item{
+    border: 1px solid #ccc;
+    margin-right: 5px;
+    transition: all 0.5s;
+    border-radius: 3px;
+}
+
+.team .team-box .nav .nav-item .nav-link{
+    color: #ccc;
+    transition: all 0.5s;
+}
+
+.team .team-box .nav .nav-item:hover{
+    background: #e84545;
+}
+
+.team .team-box .nav .nav-item:hover .nav-link{
+    color: #fff;
+
+
+}
+
+/*Client CSS*/
+
+.client{}
+
+.speech{
+    background: url(../images/client.png);
+    background-position: center;
+    background-size: cover;
+    height: 355px;
+    padding: 10%;
+}
+
+.speech h5{
+    font-size: 36px;
+    font-family: 'Cardo', serif;
+    margin-bottom: 30px;
+    color: #fff;
+    line-height: 1.7;
+}
+
+ .speech p{
+    color: #fff;
+    font-weight: 700;
+
+}
+
+
+/*Download Section CSS*/
+
+
+.download{
+    padding: 80px 0;
+    background: #f7f5f5;
+}
+
+.download h5{
+    font-size: 28px;
+}
+
+.download p{
+    font-size: 14 px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.download a{
+    border: 1px solid #e84545;
+    padding: 7px 50px;
+}
+
+.download a:hover{
+    
+}
+
+
+/*Footer CSS*/
+
+footer{
+    padding: 50px 0;
+    background: #3a3e64;
+}
+
+footer .box{
+    color: #fff;
+    text-align: center;
+}
+
+footer .box h5{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+footer .box p{
+    line-height: 1.7;
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+footer .box .nav{}
+
+footer .box .nav .nav-item{
+    border: 1px solid #fff;
+    margin: 0 5px;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+footer .box .nav .nav-item .nav-link{
+    color: #fff;
+    transition: all 0.5s;
+}
+
+footer .box .nav .nav-item:hover{
+    background: #e84545;
+    border: 2px solid #e84545;
+
+}
+
+
+/*Bottom Footer CSS*/
+
+.bottom-footer{
+    padding: 25px 0;
+    background: #313454;
+    color: #8c8b8b;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.bottom-footer p{}
+
+
+
+
+/*Responsisive CSS*/
+
+@media (min-width: 0px ) and (max-width: 575px ){
+
+/*Nav-bar Responsive*/
+
+.navbar .nav-item.active .nav-link::after {
+    content: unset;
+   
+}
+
+.navbar .nav-item.active .nav-link::before {
+    content: unset;
+   
+}
+
+.navbar .nav-item .nav-link::after {
+    content:unset;
+    }
+
+.navbar .nav-item .nav-link::before {
+    content:unset;
+    }
+
+
+/*Header Responsive*/
+
+.hero-area {
+   margin: 30% 0;
+}
+
+.hero-area h1 {
+    font-size: 32px;
+    padding: 0px 5%;
+}
+
+.hero-area p {
+    font-size: 18px;
+    padding: 0 5%;
+}
+
+/*Gallery Responsive*/
+
+.gallery .gallery-item .hover-box h5 {
+    margin-top: 30%;
+}
+
+/*Team CSS*/
+
+.team {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.team .team-box {
+    text-align: center;
+}
+
+.team .team-box .nav {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    flex-wrap: unset;
+}
+
+/*Download Responsive*/
+
+.download a {
+    padding: 7px 30px;
+}
+
+/*Footer Responsive*/
+
+footer .box {
+    margin: 3% 0;
+}
+
+footer .box h5 {
+    margin-bottom: 10px;
+}
+
+}
+
+@media (min-width: 576px ) and (max-width: 767px){
+
+    /*Nav-bar Responsive*/
+
+.navbar .nav-item.active .nav-link::after {
+    content: unset;
+   
+}
+
+.navbar .nav-item.active .nav-link::before {
+    content: unset;
+   
+}
+
+.navbar .nav-item .nav-link::after {
+    content:unset;
+    }
+
+.navbar .nav-item .nav-link::before {
+    content:unset;
+    }
+
+/*Header Responsive*/
+
+    .hero-area {
+    margin-top: 15%;
+}
+
+.hero-area h1 {
+    font-size: 45px;
+    padding: 0 4%;
+}
+
+.hero-area p {
+    font-size: 20px;
+    padding: 0 5%;
+}
+
+/*Team Responsive*/
+
+.team .team-box {
+    text-align: center;
+}
+
+.team .team-box .nav {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    flex-wrap: unset;
+}
+
+.gallery .gallery-item .hover-box h5 {
+    margin-top: 30%;
+
+}
+
+footer .box {
+    margin: 3% 0;
+}
+
+footer .box h5 {
+    margin-bottom: 10px;
+}
+
+
+}
+
+@media (min-width: 768px ) and (max-width: 991px ){
+
+    /*Nav-bar Responsive*/
+
+.navbar .nav-item.active .nav-link::after {
+    content: unset;
+   
+}
+
+.navbar .nav-item.active .nav-link::before {
+    content: unset;
+   
+}
+
+.navbar .nav-item .nav-link::after {
+    content:unset;
+    }
+
+.navbar .nav-item .nav-link::before {
+    content:unset;
+    }
+
+    /*Header Responsive*/
+
+.hero-area {
+    margin-top: 15%;
+}
+
+.hero-area h1 {
+    font-size: 45px;
+    padding: 0 4%;
+}
+
+.hero-area p {
+    font-size: 22px;
+    padding: 0 5%;
+}
+
+.gallery .gallery-item .hover-box h5 {
+    margin-top: 30%;
+}
+
+/*Team CSS*/
+
+.team .team-box {
+    text-align: center;
+}
+
+.team .team-box .nav {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    flex-wrap: unset;
+}
+
+}
+
+@media (min-width: 992px ) and (max-width: 1199px ){
+
+   /*Header Responsive*/
+
+    .hero-area {
+    margin-top: 12%;
+}
+
+.hero-area h1 {
+    font-size: 55px;
+}
+
+/*Team CSS*/
+
+.team .team-box {
+    text-align: center;
+}
+
+.team .team-box .nav {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    flex-wrap: unset;
+}
+
+.team .team-box h5 {
+    font-size: 16px;
+
+}
+
+
+
+}
+
+
